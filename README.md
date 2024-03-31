@@ -5,11 +5,18 @@ Ingresar en el terminal de power shell
 Ejecutar el siguiente comando docker 
 
 ```sh
-docker run -it --name nameImagen ubuntu
+docker run -it --name nameImage ubuntu
 ```
-En la consola de power shell se mostrará
 
+## Para definir y exponer la aplicacion que publicaremos en linux
+
+```sh
+docker run -p 8080:5000 -it --name nameimage ubuntu
 ```
+
+En la consola de power shell se mostrará (NO COPY)
+
+```sh
 docker run -it --name serverlinuxPrueba ubuntu
 root@c28e4977f1d3:/#
 ```

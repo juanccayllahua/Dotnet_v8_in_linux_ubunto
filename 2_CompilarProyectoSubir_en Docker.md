@@ -15,6 +15,27 @@ En la termina de powershell de windows trasladaremos el compilado a nuestra maqu
 docker cp C:\Users\ClementeCayllahua\source\repos\ApiClimaTesting222\ApiClimaTesting222\bin\Release\net8.0\linux-x64\publish serverlinuxPrueba:/bin/mydotnetproject
 ```
 
+Modificar el archivo appsetting.json, esta modificación lo puedes realizar al momento de crear tu proyecto .NET, para el 
+caso estamos direccionando desde el puerto 8080 a 5000 por esa razon en la URL se visualiza http://0.0.0.0:5000
+
+```sh
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "Kestrel": {
+    "Endpoints": {
+      "Http": {
+        "Url": "http://0.0.0.0:5000"
+      }
+    }
+  }
+}
+```
 
 Ir al directorio linux y ejecutar el siguiente comando 
 
@@ -28,13 +49,8 @@ Guardar el ID generado
 [1] 902
 ```
 
+Para validar ir a la pc principal en su navegador digitar el nombre del equipo
 
-
-docker run -p 8080:80
-docker run -p 8080:5000 -it --name ingresacompu ubuntu
-
-sudo apt update
-sudo apt install systemd
-
-
-docker cp C:\Users\ClementeCayllahua\source\repos\ApiClimaTesting222\ApiClimaTesting222\bin\Release\net8.0\linux-x64\publish ingresacompu:/bin/mypublicfolder
+```sh
+http://backend:8080/WeatherForecast
+```
