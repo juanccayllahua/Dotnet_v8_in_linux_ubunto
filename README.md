@@ -67,6 +67,13 @@ Instalar dependencias
 sudo apt install zlib1g
 ```
 
+Para validar la instalación de DOTNET ejecutar el siguiente comando
+
+
+```sh
+dotnet --VERSION
+```
+
 
 Referencias
 
