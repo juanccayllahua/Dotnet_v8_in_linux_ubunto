@@ -36,6 +36,13 @@ sudo apt update
 sudo apt install nano
 ```
 
+Instalar el comando CURL para validar que carga la aplicación dentro de linux, digitar Y para continuar la instalación
+
+```sh
+sudo apt update
+sudo apt install curl
+```
+
 ## INSTALAR DOTNET v8 .NET 
 
 En los siguientes pasos vamos a configurar el entorno de linux para correr nuestra aplicación NET CORE.

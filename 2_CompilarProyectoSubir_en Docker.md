@@ -28,10 +28,13 @@ Guardar el ID generado
 [1] 902
 ```
 
-para
 
-Instalar el comando CURL para validar que carga la aplicación, indicar Y para continuar la instalación
-```sh
+
+docker run -p 8080:80
+docker run -p 8080:5000 -it --name ingresacompu ubuntu
+
 sudo apt update
-sudo apt install curl
-```
+sudo apt install systemd
+
+
+docker cp C:\Users\ClementeCayllahua\source\repos\ApiClimaTesting222\ApiClimaTesting222\bin\Release\net8.0\linux-x64\publish ingresacompu:/bin/mypublicfolder
