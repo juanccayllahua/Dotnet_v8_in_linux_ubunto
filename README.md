@@ -71,12 +71,32 @@ Para validar la instalación de DOTNET ejecutar el siguiente comando
 
 
 ```sh
-dotnet --VERSION
+dotnet --version
+```
+
+
+Usando la terminal del servidor linux 
+
+Ubicarse en la carpeta bin 
+
+```sh
+cd bin
+```
+
+Crear la carpeta para subir los proyectos NET
+
+```sh
+mkdir mydotnetapp
+```
+
+Asignar los permisos requeridos
+
+```sh
+chmod 400 nameFolder
 ```
 
 
 Referencias
-
 
 
 https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-2204
