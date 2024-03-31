@@ -16,7 +16,7 @@ docker cp C:\Users\ClementeCayllahua\source\repos\ApiClimaTesting222\ApiClimaTes
 ```
 
 Modificar el archivo appsetting.json, esta modificación lo puedes realizar al momento de crear tu proyecto .NET, para el 
-caso estamos direccionando desde el puerto 8080 a 5000 por esa razon en la URL se visualiza http://0.0.0.0:5000
+caso estamos direccionando desde el puerto 8080 a 5000 por esa razon en la URL se visualiza http://0.0.0.0:5000 , al momento de crear se definió para redireccionar
 
 ```sh
 {
